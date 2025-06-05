@@ -1,7 +1,12 @@
 import logo from "/assets/images/logo.svg";
 import { useState } from "react";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState("home");
+
+  const linkClass = (name) =>
+    `hover:text-blue-400 ${active === name ? "text-blue-400" : ""}`;
 
   return (
     <nav className="bg-black bg-opacity-70 text-white fixed w-full z-20">
@@ -22,22 +27,38 @@ const Navbar = () => {
 
         <ul className="hidden md:flex space-x-6 font-medium">
           <li>
-            <a href="#home" className="hover:text-blue-400">
+            <a
+              href="#home"
+              onClick={() => setActive("home")}
+              className={linkClass("home")}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-blue-400">
+            <a
+              href="#about"
+              onClick={() => setActive("about")}
+              className={linkClass("about")}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#service" className="hover:text-blue-400">
+            <a
+              href="#service"
+              onClick={() => setActive("service")}
+              className={linkClass("service")}
+            >
               Services
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-blue-400">
+            <a
+              href="#contact"
+              onClick={() => setActive("contact")}
+              className={linkClass("contact")}
+            >
               Contact
             </a>
           </li>
@@ -47,24 +68,40 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4">
-          <ul className="flex flex-col space-y-8 items-center ">
+          <ul className="flex flex-col space-y-8 items-center">
             <li>
-              <a href="#home" className="hover:text-blue-400">
+              <a
+                href="#home"
+                onClick={() => setActive("home")}
+                className={linkClass("home")}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-blue-400">
+              <a
+                href="#about"
+                onClick={() => setActive("about")}
+                className={linkClass("about")}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-blue-400">
+              <a
+                href="#service"
+                onClick={() => setActive("service")}
+                className={linkClass("service")}
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-400">
+              <a
+                href="#contact"
+                onClick={() => setActive("contact")}
+                className={linkClass("contact")}
+              >
                 Contact
               </a>
             </li>
