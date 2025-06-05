@@ -32,7 +32,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#services" className="hover:text-blue-400">
+            <a href="#service" className="hover:text-blue-400">
               Services
             </a>
           </li>
