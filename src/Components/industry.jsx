@@ -11,7 +11,7 @@ const industries = [
 
 const Industry = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-16" id="industries">
+    <section className="bg-gray-50 py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-blue-900 mb-4">
           Diverse Expertise, Targeted Results

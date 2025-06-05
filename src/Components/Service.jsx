@@ -3,6 +3,7 @@ import talentIcon from "/img (1).jpg";
 import recruitIcon from "/img (2).jpg";
 import contractIcon from "/img (3).jpg";
 import advisoryIcon from "/img (4).jpg";
+import Industry from "./industry";
 
 const services = [
   {
@@ -69,6 +70,7 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <Industry />
     </section>
   );
 };
