@@ -67,7 +67,7 @@ const Home = () => {
           </button>
           <a
             href="#contact"
-            className="border border-blue-600 text-blue-400 px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-black"
+            className="border border-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-black"
           >
             Book a Free Consultation
           </a>
