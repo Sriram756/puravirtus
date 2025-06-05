@@ -58,8 +58,10 @@ const Home = () => {
         </h2>
         <p className="max-w-2xl text-base md:text-lg mb-8">
           At PuraVirtus, we don’t just fill vacancies—we build teams that drive
-          growth. Whether you're scaling a startup or expanding your corporate
-          workforce, we’re here to help you hire with confidence and clarity.
+          growth. As a trusted HR consultancy, we specialize in delivering
+          customized recruitment solutions for businesses of all sizes. Whether
+          you're scaling a startup or expanding your corporate workforce, we’re
+          here to help you hire with confidence and clarity.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md text-white font-semibold">

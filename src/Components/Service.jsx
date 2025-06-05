@@ -15,19 +15,19 @@ const services = [
     icon: talentIcon,
     title: "Talent Mapping & Market Intelligence",
     description:
-      "We provide insights into talent availability, salary benchmarks, and competitor analysis to drive strategic hiring.",
+      "Get strategic insights into talent availability, salary benchmarks, and competitor analysis for smarter hiring.",
   },
   {
     icon: contractIcon,
     title: "Contract Staffing",
     description:
-      "Flexible hiring models that help you scale quickly without long-term commitments or overhead.",
+      "Flexible hiring models that allow you to scale quickly without long-term commitments.",
   },
   {
     icon: advisoryIcon,
     title: "HR Advisory & Compliance",
     description:
-      "From onboarding to compliance, our expert HR guidance supports your internal teams and policies.",
+      "We provide HR policy frameworks, onboarding processes, and compliance guidance to support your internal teams.",
   },
 ];
 

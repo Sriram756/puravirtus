@@ -9,7 +9,8 @@ const Contact = () => {
         </h2>
         <p className="text-center text-gray-600 text-2xl max-w-2xl mx-auto mb-12">
           Whether you're hiring your next leader or building an entire team,
-          PuraVirtus is here to support you every step of the way.
+          PuraVirtus is here to support you every step of the way. Let’s talk
+          about how we can transform your recruitment strategy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

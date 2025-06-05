@@ -37,23 +37,24 @@ const About = () => {
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              <strong>🎯 Industry Expertise:</strong> Seasoned recruiters across
-              domains
+              <strong>🎯 Deep Industry Expertise:</strong> Seasoned recruiters
+              across domains
             </li>
             <li>
-              <strong>🤝 Personalized Solutions:</strong> No one-size-fits-all
-              approach
+              <strong>🤝 Personalized Hiring Strategies:</strong> No
+              one-size-fits-all approach
             </li>
             <li>
               <strong>⏱️ Speed & Precision:</strong> Fast hiring without
               compromising quality
             </li>
             <li>
-              <strong>📊 Data-Driven:</strong> Smart decisions using market
-              insights
+              <strong>📊 Data-Driven Recruitment Process:</strong> Smart
+              decisions using market insights
             </li>
             <li>
-              <strong>🌍 Global Reach:</strong> We connect talent across borders
+              <strong>🌍 Nationwide & Global Talent Reach:</strong> We connect
+              talent across borders
             </li>
           </ul>
         </div>
@@ -65,13 +66,12 @@ const About = () => {
           Our Mission & Vision
         </h3>
         <p className="text-gray-700 max-w-3xl mx-auto mb-4">
-          <strong>Mission:</strong> Empower businesses through impactful hiring
-          solutions while supporting professionals to thrive in careers that
-          matter.
+          <strong>Mission:</strong> To empower businesses through impactful
+          talent solutions while fostering career success for professionals.
         </p>
         <p className="text-gray-700 max-w-3xl mx-auto">
-          <strong>Vision:</strong> To be a top HR consultancy known for trust,
-          excellence, and meaningful human connections.
+          <strong>Vision:</strong> To be a leading HR consultancy known for
+          trust, integrity and results.
         </p>
       </div>
     </section>
