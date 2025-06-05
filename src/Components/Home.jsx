@@ -30,6 +30,7 @@ const offerings = [
 const Home = () => {
   return (
     <div
+      id="home"
       className="min-h-screen  relative   bg-cover bg-center"
       style={{ backgroundImage: "url('/hero-bg.jpg')" }}
     >

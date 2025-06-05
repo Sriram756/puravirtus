@@ -3,7 +3,10 @@ import aboutImg from "/about.jpg"; // Make sure the image exists
 
 const About = () => {
   return (
-    <section className="bg-white relative min-h-screen text-gray-800 py-16 px-4 md:px-20">
+    <section
+      id="about"
+      className="bg-white relative min-h-screen text-gray-800 py-16 px-4 md:px-20"
+    >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Image */}
         <div className="flex justify-center">

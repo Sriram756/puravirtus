@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-16">
+    <section id="contact" className="bg-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4">
           Let’s Build Your Dream Team

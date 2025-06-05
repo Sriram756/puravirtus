@@ -33,7 +33,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-16 text-gray-800">
+    <section
+      id="service"
+      className="bg-gray-50 py-20 px-6 md:px-16 text-gray-800"
+    >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-900 animate-fade-in-down">
           What We Do
