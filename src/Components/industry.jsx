@@ -9,7 +9,7 @@ const industries = [
   { icon: "🌱", label: "Startups & SMEs" },
 ];
 
-const Industries = () => {
+const Industry = () => {
   return (
     <section className="bg-gray-50 py-20 px-6 md:px-16" id="industries">
       <div className="max-w-7xl mx-auto text-center">
@@ -51,4 +51,4 @@ const Industries = () => {
   );
 };
 
-export default Industries;
+export default Industry;
