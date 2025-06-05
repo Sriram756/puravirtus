@@ -19,3 +19,9 @@ backdrop-filter: blur(5.5px);
 -webkit-backdrop-filter: blur(5.5px);
 border: 1px solid rgba(51, 78, 172, 0.47);
 }
+
+.shadow{
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 150, 199, 1);
+-moz-box-shadow: 8px 8px 24px 0px rgba(0, 150, 199, 1);
+box-shadow: 8px 8px 24px 0px rgba(0, 150, 199, 1);
+}

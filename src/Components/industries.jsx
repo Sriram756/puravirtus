@@ -27,7 +27,7 @@ const Industries = () => {
           {industries.map((industry, idx) => (
             <div
               key={idx}
-              className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 hover:shadow-xl"
+              className="bg-white shadow rounded-xl p-6 flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 hover:shadow-xl"
             >
               <div className="text-4xl mb-2">{industry.icon}</div>
               <p className="text-lg font-medium text-gray-800">
