@@ -35,7 +35,7 @@ const About = () => {
           <h3 className="text-xl font-semibold text-blue-800 mb-2">
             Why Choose Us
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
+          <ul className="list-inside space-y-2 text-gray-700">
             <li>
               <strong>🎯 Deep Industry Expertise:</strong> Seasoned recruiters
               across domains
