@@ -9,7 +9,7 @@ const Navbar = () => {
     `hover:text-blue-400 ${active === name ? "text-blue-400" : ""}`;
 
   return (
-    <nav className="bg-white bg-opacity-90 text-black fixed w-full z-20">
+    <nav className="bg-white text-black fixed w-full z-20">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex flex-row items-center">
           <img src={logo} alt="" className="w-10 h-10" />
