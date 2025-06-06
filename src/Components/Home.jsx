@@ -64,9 +64,12 @@ const Home = () => {
           here to help you hire with confidence and clarity.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md text-white font-semibold">
+          <a
+            href="#about"
+            className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md text-white font-semibold"
+          >
             Get Started
-          </button>
+          </a>
           <a
             href="#contact"
             className="border border-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-black"
