@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold">Email Id</label>
+              <label className="block mb-1 font-semibold">Email</label>
               <input
                 type="email"
                 placeholder="Email Address"
@@ -100,12 +100,12 @@ const Contact = () => {
             {/* Success/Error Messages */}
             {status === "success" && (
               <p className="text-green-600 font-semibold">
-                ✅ Message sent successfully!
+                Message sent successfully!
               </p>
             )}
             {status === "error" && (
               <p className="text-red-600 font-semibold">
-                ❌ Failed to send message. Please try again later.
+                Failed to send message. Please try again later.
               </p>
             )}
 
