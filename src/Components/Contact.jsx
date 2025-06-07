@@ -1,8 +1,9 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState(null); // null | "success" | "error"
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,13 +14,18 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setStatus("success");
+          form.current.reset();
+          setTimeout(() => setStatus(null), 5000); // Clear after 5s
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("FAILED...", error.text);
+          setStatus("error");
+          setTimeout(() => setStatus(null), 5000); // Clear after 5s
         }
       );
   };
+
   return (
     <section id="contact" className="bg-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
@@ -32,12 +38,13 @@ const Contact = () => {
           about how we can transform your recruitment strategy.
         </p>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-10"
-          onSubmit={sendEmail}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact Form */}
-          <form className="bg-gray-50 p-8 shadow-lg rounded-lg space-y-6">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="bg-gray-50 p-8 shadow-lg rounded-lg space-y-6"
+          >
             <div>
               <label className="block mb-1 font-semibold">Name</label>
               <input
@@ -45,6 +52,7 @@ const Contact = () => {
                 placeholder="Your Name"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
                 name="from_name"
+                required
               />
             </div>
 
@@ -65,6 +73,7 @@ const Contact = () => {
                 placeholder="Email Address"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
                 name="from_email"
+                required
               />
             </div>
 
@@ -88,14 +97,26 @@ const Contact = () => {
               ></textarea>
             </div>
 
+            {/* Success/Error Messages */}
+            {status === "success" && (
+              <p className="text-green-600 font-semibold">
+                ✅ Message sent successfully!
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-red-600 font-semibold">
+                ❌ Failed to send message. Please try again later.
+              </p>
+            )}
+
             <button
               type="submit"
               className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition"
-              value="send"
             >
               Submit
             </button>
           </form>
+
           {/* Contact Info */}
           <div className="flex flex-col justify-center bg-white text-gray-700 space-y-6">
             <div>
