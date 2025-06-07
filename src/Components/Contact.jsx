@@ -1,6 +1,25 @@
 import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_at6nhpl", "template_wdmp45k", form.current, {
+        publicKey: "cBc8dDkNZDzlPj05D",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section id="contact" className="bg-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
@@ -13,7 +32,10 @@ const Contact = () => {
           about how we can transform your recruitment strategy.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+          onSubmit={sendEmail}
+        >
           {/* Contact Form */}
           <form className="bg-gray-50 p-8 shadow-lg rounded-lg space-y-6">
             <div>
@@ -22,6 +44,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Name"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
+                name="from_name"
               />
             </div>
 
@@ -31,6 +54,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Company Name"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
+                name="company_name"
               />
             </div>
 
@@ -40,6 +64,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Email Address"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
+                name="from_email"
               />
             </div>
 
@@ -49,6 +74,7 @@ const Contact = () => {
                 type="tel"
                 placeholder="Phone Number"
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
+                name="from_number"
               />
             </div>
 
@@ -58,12 +84,14 @@ const Contact = () => {
                 rows="4"
                 placeholder="Your Message..."
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-blue-500"
+                name="message"
               ></textarea>
             </div>
 
             <button
               type="submit"
               className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition"
+              value="send"
             >
               Submit
             </button>
